@@ -1,0 +1,124 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\W}{\mathbb{W}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{homework}[2][Homework]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{other}[2][]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+ 
+\title{Chapter 1}%replace X with the appropriate homework chapter or title
+\author{Michael Garcia\\ %replace with your name
+MAT 203 - Discrete Mathematics} 
+ 
+\maketitle
+ 
+\begin{theorem}{4} %You can use theorem, proposition, homework, exercise, or reflection here.  Modify x.yz to be whatever number you are proving or solving
+  The sum of two odd numbers is even.
+\end{theorem}
+ 
+\begin{proof}
+  Recall the definition of an odd number to be a number, n, that can be written as 2k-1 where k is an integer. 
+  Recall also that the definition of an even number is a number, m, that can be written as 2j where j is an integer.
+  Let $n_1 = |2k-1|$ and $n_2 = |2j-1|$. By adding these two we get $2k-1+2j-1$ which turns into $2k+2j-2$. By factoring out the 2 we receive $2(k+j-1)$.
+\end{proof}
+
+\begin{other}{Result}
+ Thus, since k and j are integers, subtracting 1 still results in an integer. Therefore we can rewrite $2k+j-1$ as m. 
+ Therefore, we are left with the definition of an even number, ergo 2m.
+\end{other}
+
+\begin{theorem}{7}
+  Every binary number n that ends in 0 is even
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+\begin{other}{Result}
+
+\end{other}
+
+\begin{theorem}{10}% Prove or find a counterxample
+ The difference of two consecutive perfect squares is odd
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+\begin{other}{Result}
+
+\end{other}
+
+\begin{theorem}{17}
+  At least two flights at Chicaog O'Hare International AIrport must take off within 90 seconds of each other
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+\begin{other}{Result}
+
+\end{other}
+
+\begin{theorem}{22a}%!
+  
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+\begin{other}{Result}
+
+\end{other}
+
+\begin{theorem}{22b}%!
+
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+\begin{other}{Result}
+
+\end{other}
+
+\begin{theorem}{23}%Suggestion: do one case for n odd and one case for n even.
+  If n is any integer, then $3n^3 + n + 5$ is odd.
+\end{theorem}
+\begin{proof}
+
+\end{proof}
+\begin{other}{Result}
+
+\end{other}
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}

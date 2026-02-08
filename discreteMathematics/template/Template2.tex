@@ -1,0 +1,143 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\W}{\mathbb{W}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{homework}[2][Homework]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{other}[2][]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+ 
+\title{Homework Template}%replace X with the appropriate homework chapter or title
+\author{Your Name\\ %replace with your name
+MAT 203 - Discrete Mathematics} 
+ 
+\maketitle
+ 
+\begin{theorem}{x.yz} %You can use theorem, proposition, homework, exercise, or reflection here.  Modify x.yz to be whatever number you are proving or solving
+Delete this text and write theorem statement here.
+\end{theorem}
+ 
+\begin{proof}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment: %Note 1: The * tells LaTeX not to number the lines.  If you remove the *, be sure to remove it below, too.
+%Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
+\begin{align*}
+\sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)\\ 
+& = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis})\\
+& = \frac{k(k+1)+2(k+1)}{2}\\
+& = \frac{(k+1)(k+2)}{2}\\
+& = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{proof}
+ 
+\begin{proposition}{x.yz}
+Let $n\in \Z$.  
+\end{proposition}
+ 
+\begin{proof}[Disproof]%Whatever you put in the square brackets will be the label for the block of text to follow in the proof environment.
+Blah, blah, blah.  I'm so smart.
+\end{proof}
+ 
+ \vspace{2 in}
+ 
+\begin{other}{Summations} Working with summation notation
+\newline
+
+Inline: $\sum_{n=1}^{\infty} 2^{-n}$ 
+
+\vspace{.5 in}
+
+Display style:\\
+$$\sum_{n=1}^{\infty} 2^{-n}$$
+\end{other}
+
+\begin{other}{Set Operations and Relations} How to write set notation
+\newline
+
+$\emptyset$, $\N$, $\Z$, $\W$
+
+$A\cap B$  
+
+$A\cup B$  
+
+$\neg{A}$ 
+
+$\bar{A}$  
+
+$\overline{A}$ 
+
+$\sim{A}$
+
+$\overline{A \cup B}$
+
+$$\overline{A \cup B}$$
+$A - B$,   $A\backslash B$\\
+$A \subset B$,   $A \subseteq B$\\
+$A \supset B$,   $A \supseteq B$\\
+$a \in A$,   $a \notin A$\\
+$A = B$,  $A \neq B$\\
+$A \times B$\\
+$A = \{1,2,3,4,5 \}$, $B = \{(x,y)|x<1 \wedge y\geq -2 \}$, $C = \{ 3,6,9,\ldots,6000\}$\\
+$n! = n(n-1)(n-2)\cdots 3 \cdot 2 \cdot 1$\\
+\end{other}
+\pagebreak
+\begin{other}{Logic Symbols and Operators} Using formal logic symbols
+
+
+$p \wedge q$, $p \vee q$
+
+$\sim p$, $\neg p$
+
+$p \Rightarrow q$, $p \rightarrow q$ 
+
+$p \Leftrightarrow q$, $p \leftrightarrow q$
+
+$\forall$, $\exists$
+
+$\therefore$
+
+\end{other}
+
+\begin{other}{Number Theory and Miscellaneous} Assorted symbols
+
+$a \equiv b \pmod{c}$
+
+Greek letters: $\alpha$, $\Omega$, $\delta$, $\Delta$, etc.
+
+\end{other}
+
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}

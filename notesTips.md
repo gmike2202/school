@@ -1,0 +1,4 @@
+- Gonna have to self teach all classes since none go deep enough in class
+- Take in class notes and personal notes separately for General Physics and Discrete Mathematics
+- Try taking most of General Physics notes in md, and use physical notebooks as supplementary
+- same with discrete mathematics

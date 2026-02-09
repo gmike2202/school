@@ -71,3 +71,7 @@ Steps to solve a problem:
 
 - Acceleration can be written as:
   - $a_x = \frac{dv_x}{dt} \frac{d}{dt} (\frac{dx}{dt}) \frac{d^2x}{dt^2}$
+
+## Analysis Model: Particle Under Constant Acceleration
+- Particle under constant acceleration - Analysis model in which the acceleration is constant. In such a case, the average acceleration $a_{x,avg}$ over any time interval is numerically equal 
+- 

@@ -79,5 +79,5 @@ Steps to solve a problem:
   - $v_{x,avg} = \frac{V_{xi} + v_{xf}}{2}$ for constant $a_x$
 - How to obtain the position of an object as a function of time. Recall that $\Delta x$ represents $x_f - x_i$ and recognizing that $\Delta t = t_f - t_i = t - 0 = t$:
   - $x_f = x_i + \frac{1}{2}(v_xi + v_xf)t$ for constant $a_x$
-  - Additional useful equation: $x_f = x_i + V_{xi}t + \frac{1}{2}a_xt^2$ for constant $a_x$
+  - Additional useful equation: $x_f = x_i + V_{xi}(t) + \frac{1}{2}a_xt^2$ for constant $a_x$
   -

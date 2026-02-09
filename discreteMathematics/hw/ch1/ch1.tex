@@ -59,13 +59,21 @@ MAT 203 - Discrete Mathematics}
 \end{other}
 
 \begin{theorem}{7}
-  Every binary number n that ends in 0 is even
+ Every binary number n that ends in 0 is even 
 \end{theorem}
+
 \begin{proof}
-
+The definition of a binary number is a number that can be written as\\
+$$n = a_{n-1} \cdot{2^{n-1}} +...+ a_1 \cdot{2^1} + a_0 \cdot{2^0}$$
+Each number except the last one can have a 2 factored out. Therefore let $m = a_{n-1} \cdot{2^{n-1}} +...+ a_1 \cdot{2^1}$.
+As such, the formula can be written as \\$$n = 2m + a_0 \cdot{2^0}$$.\\
+Recall that the definition of an even number to be a number that can be written as 2m.
+Since $2^0 = 1$, and since the last number is 0, we have \\$$n = 2m + 0 \cdot{1} = 2m$$.
 \end{proof}
-\begin{other}{Result}
 
+\begin{other}{Result}
+  Thus, through the definition of an even number, any integer that can be written as 2m, where m is an integer is even. 
+  Therefore since any binary number n ending in 0 can be written as 2m, it follows that n is even.
 \end{other}
 
 \begin{theorem}{10}% Prove or find a counterxample

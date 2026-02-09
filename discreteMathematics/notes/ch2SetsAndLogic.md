@@ -1,3 +1,4 @@
+# Sets and Logic
 Set: a mathematical object that contains distinct unordered elements. There may be finitely many or infinitely many elements in a set.
 Element: can be words, objects, numbers, or sets (basically anything)
 Empty Set: set with no elements, also called the null set

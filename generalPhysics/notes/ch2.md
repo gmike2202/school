@@ -59,4 +59,9 @@ Steps to solve a problem:
 -  Think about the problem. How was it similar to others? How was it different? Why was it assigned? What have you learned by doing it?
 
 ## Acceleration
-
+- The average acceleration of a particle is defined as the change in velocity $\Delta v_x$ divided by the time interval $\Delta t$ during which that change occurs:
+  - $a_{x,avg} \equiv \frac{\Delta V_x}{\Delta t} = \frac{v_{xf} - v_{xi}}{t_f - t_i}$
+- Instantaneous acceleration - The limit of the average acceleration as $\Delta t$ approaches zero.
+  - $a_x \equiv \lim_{\Delta t\to0} \frac{\Delta v_x}{\Delta t} = \frac{dv_x}{dt}$
+  - The instantaneous acceleration equals the derivative of the velocity with respect to time, which by definition is the slope of the velocity-time graph.
+-     

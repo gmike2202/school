@@ -64,4 +64,10 @@ Steps to solve a problem:
 - Instantaneous acceleration - The limit of the average acceleration as $\Delta t$ approaches zero.
   - $a_x \equiv \lim_{\Delta t\to0} \frac{\Delta v_x}{\Delta t} = \frac{dv_x}{dt}$
   - The instantaneous acceleration equals the derivative of the velocity with respect to time, which by definition is the slope of the velocity-time graph.
--     
+- The force on an object is proportional to the acceleration of the object:
+  - $F_x \propto a_x$
+>Negative Acceleration:  
+ Keep in mind that negative acceleration does not necessarily mean that an object is slowing down. If the acceleration is negative and the velocity is negative, the object is speeding up! 
+
+- Acceleration can be written as:
+  - $a_x = \frac{dv_x}{dt} \frac{d}{dt} (\frac{dx}{dt}) \frac{d^2x}{dt^2}$

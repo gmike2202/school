@@ -60,4 +60,3 @@ Steps to solve a problem:
 
 ## Acceleration
 
-

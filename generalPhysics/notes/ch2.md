@@ -73,5 +73,11 @@ Steps to solve a problem:
   - $a_x = \frac{dv_x}{dt} \frac{d}{dt} (\frac{dx}{dt}) \frac{d^2x}{dt^2}$
 
 ## Analysis Model: Particle Under Constant Acceleration
-- Particle under constant acceleration - Analysis model in which the acceleration is constant. In such a case, the average acceleration $a_{x,avg}$ over any time interval is numerically equal 
-- 
+- Particle under constant acceleration - Analysis model in which the acceleration is constant. In such a case, the average acceleration $a_{x,avg}$ over any time interval is numerically equal:
+  - $v_{xf} = v_{xi} + a_xt$ for constant $a_x$
+- We can express the average velocity in any time interval as the arithmetic mean of the initial velocity $v_{xi}$ and the final velocity $v_{xf}$:
+  - $v_{x,avg} = \frac{V_{xi} + v_{xf}}{2}$ for constant $a_x$
+- How to obtain the position of an object as a function of time. Recall that $\Delta x$ represents $x_f - x_i$ and recognizing that $\Delta t = t_f - t_i = t - 0 = t$:
+  - $x_f = x_i + \frac{1}{2}(v_xi + v_xf)t$ for constant $a_x$
+  - Additional useful equation: $x_f = x_i + V_{xi}t + \frac{1}{2}a_xt^2$ for constant $a_x$
+  -

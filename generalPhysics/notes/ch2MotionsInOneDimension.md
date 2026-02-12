@@ -1,5 +1,21 @@
 # Motion in One Dimension
 
+<!--toc:start-->
+- [Motion in One Dimension](#motion-in-one-dimension)
+  - [Position, Velocity, and Speed of a Particle](#position-velocity-and-speed-of-a-particle)
+  - [Instantaneous Velocity and Speed](#instantaneous-velocity-and-speed)
+  - [Analysis Model: Particle Under Constant Velocity](#analysis-model-particle-under-constant-velocity)
+  - [The Analysis Model Approach to Problem-Solving](#the-analysis-model-approach-to-problem-solving)
+    - [Conceptualize](#conceptualize)
+    - [Categorize](#categorize)
+    - [Analyze](#analyze)
+    - [Finalize](#finalize)
+  - [Acceleration](#acceleration)
+  - [Analysis Model: Particle Under Constant Acceleration](#analysis-model-particle-under-constant-acceleration)
+  - [Freely Falling Objects](#freely-falling-objects)
+  - [Kinematic Equations Derived from Calculus](#kinematic-equations-derived-from-calculus)
+<!--toc:end-->
+
 ## Position, Velocity, and Speed of a Particle
 
 - Displacement $\Delta x$ - of a particle is defined as its change in position in some time interval.
@@ -14,14 +30,16 @@ Average Speed and Average Velocity:
   - The magnitude of the average velocity is *not* the average speed.
 
 ## Instantaneous Velocity and Speed
-- Instantaneous velocity - equals the limiting value of the ratio $\frac{\Delta x}{\Delta t}$ as $\Delta t$ approaches zero: $v_x \equiv \lim_{\Delta t\to0} \frac{\Delta x}{\Delta t}$
-  - In calculus notation: $v_x \lim_{\Delta t\to0}\frac{\Delta x}{\Delta t} = \frac{dx}{dt}$
+- Instantaneous velocity - equals the limiting value of the ratio $\frac{\Delta x}{\Delta t}$ as $\Delta t$ approaches zero: 
+  - $v_x \equiv \lim_{\Delta t\to0} \frac{\Delta x}{\Delta t}$
+  - In calculus notation:
+    - $$v_x \lim_{\Delta t\to0}\frac{\Delta x}{\Delta t} = \frac{dx}{dt}$$
 - Instantaneous speed - defined as the magnitude of a particle's instantaneous velocity. It has no direction associated with it.
 
->Slopes of Graphs:
+>[!Note]
   >In any graph of physical data, the slope represents the ratio of the change in the quantity represented on the vertical axis to the change in the quantity represented on the horizontal axis. Remember that a slope has units (unless both axes have the same units).
   
->Instantaneous Speed and Instantaneous Velocity:
+>[!Note]
   >The magnitude of the instantaneous velocity is the instantaneous speed. In an infinitesimal time interval, the magnitude of the displacement is equal to the distance traveled by the particle.
 
 ## Analysis Model: Particle Under Constant Velocity
@@ -80,4 +98,27 @@ Steps to solve a problem:
 - How to obtain the position of an object as a function of time. Recall that $\Delta x$ represents $x_f - x_i$ and recognizing that $\Delta t = t_f - t_i = t - 0 = t$:
   - $x_f = x_i + \frac{1}{2}(v_xi + v_xf)t$ for constant $a_x$
   - Additional useful equation: $x_f = x_i + V_{xi}(t) + \frac{1}{2}a_xt^2$ for constant $a_x$
-  -
+
+## Freely Falling Objects
+- A freely falling object is an object that moves freely under the influence of gravity alone, regardless of its initial motion
+
+>[!Note]
+> A common misconception is that the acceleration of a projectile at the top of its trajectory is zero. Although the velocity at the top of the motion of an object thrown upward momentarily goes the zero, *the acceleration is still that due to gravity at this point.* If the velocity and acceleration were both zero, the projectile would stay at the top.
+
+## Kinematic Equations Derived from Calculus
+![image](/Users/muck/Documents/Syncthing/School/generalPhysics/53278_02_f15-t2.png)
+
+- The total displacement for the interval $t_f-t_i$ is the sum of the areas of all the rectangles from $t_i$ to $t_f$:
+  - $$\Delta x = \sum_{n} V_{xn,avg} \Delta t_n$$
+- As the intervals are made smaller and smaller, the number of terms in the sum increases and the sum approaches a value equal to the are under the curve in the velocity-time graph.
+  - $$\Delta x = \lim_{\Delta t_n\to0} \sum_n v_{xn,avg} \Delta t_n$$
+- The limit of the sum = definite integral
+  - $\Delta x = \int_{t_i}^{t_f} v_x(t)dt$
+
+### Kinematic Equations
+- $x_f - x_i = v_{xi}t + \frac{1}{2}a_x(t)^2$
+
+> [!Note]
+> If this discussion of integration is confusing, just remember that the integral of a function is simply the area between the function and the x axis between the limits of integration. If the function has a simple shape, the are can be easily calculated without integration. For example, if the function is a constant, so that its graph is a horizontal line, the area is just that of the rectangle between the line and the x axis!
+
+

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1770656158.04685 "ch1.tex" "ch1.pdf" "ch1" 1770656158.47887 0
+["pdflatex"] 1770944221.49844 "ch1.tex" "ch1.pdf" "ch1" 1770944222.00658 0
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -50,8 +50,8 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1769648934 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "ch1.aux" 1770656158.4109 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
-  "ch1.tex" 1770656156.18056 5344 2d8822cad45b9e562610ff4d0b9bcab4 ""
+  "ch1.aux" 1770944221.9233 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "ch1.tex" 1770944220.44918 5315 102a075f26739ba31ed68573ecf9f881 ""
   (generated)
   "ch1.aux"
   "ch1.log"

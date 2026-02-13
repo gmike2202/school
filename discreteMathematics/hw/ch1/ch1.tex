@@ -49,26 +49,38 @@ MAT 203 - Discrete Mathematics}
  
 \begin{proof}
   Recall the definition of an odd number to be a number, n, that can be written as 2k-1 where k is an integer. 
-  Recall also that the definition of an even number is a number, m, that can be written as 2j where j is an integer.
-  Let $n_1 = |2k-1|$ and $n_2 = |2j-1|$. By adding these two we get $2k-1+2j-1$ which turns into $2k+2j-2$. By factoring out the 2 we receive $2(k+j-1)$.
+  Recall also that the definition of an even number is a number that can be written as 2m where m is an integer.\\
+  Let $n_1$ and $n_2$ both be odd numbers.
+  Then,
+  \begin{align*}
+    n_1 + n_2 &=(2k-1) + (2j-1)\\
+               &= 2k-1+2j-1\\
+               &= 2k+2j-2\\
+               &= 2(k+j-1)\\
+               &= 2m
+  \end{align*}
+  where $m = k + j - 1$. As integers are closed under addition and subtraction m itself must be an integer.
 \end{proof}
 
 \begin{other}{Result}
- Thus, since k and j are integers, subtracting 1 still results in an integer. Therefore we can rewrite $2k+j-1$ as m. 
- Therefore, we are left with the definition of an even number, ergo 2m.
+ Therefore, $k + j - 1$ can be written as m, and we are left with the definition of an even number, 2m.
 \end{other}
 
 \begin{theorem}{7}
- Every binary number n that ends in 0 is even.
+ Every binary number n that ends in 0 is even 
 \end{theorem}
 
 \begin{proof}
+Recall the definition of an even number to be a number that can be written as 2m.
 The definition of a binary number is a number that can be written as\\
 $$n = a_{n-1} \cdot{2^{n-1}} +...+ a_1 \cdot{2^1} + a_0 \cdot{2^0}$$
-Each number except the last one can have a 2 factored out. Therefore let $m = a_{n-1} \cdot{2^{n-1}} +...+ a_1 \cdot{2^1}$.
-As such, the formula can be written as \\$$n = 2m + a_0 \cdot{2^0}$$.\\
-Recall that the definition of an even number to be a number that can be written as 2m.
-Since $2^0 = 1$, and since the last number is 0, we have \\$$n = 2m + 0 \cdot{1} = 2m$$.
+Then, 
+  \begin{align*}
+   m = a_{n-1} \cdot{2^{n-1}} +...+ a_1 \cdot{2^1}
+   n = 2m + a_0 \cdot{2^0} 
+  \end{align*}
+Since $2^0 = 1$, and since the last number is 0, we have\\
+$$n = 2m + 0 \cdot{1} = 2m$$.
 \end{proof}
 
 \begin{other}{Result}
@@ -76,19 +88,21 @@ Since $2^0 = 1$, and since the last number is 0, we have \\$$n = 2m + 0 \cdot{1}
   Therefore, since any binary number n ending in 0 can be written as 2m, it follows that n is even.
 \end{other}
 
-\pagebreak
-
 \begin{theorem}{10}% Prove or find a counterxample
  The difference of two consecutive perfect squares is odd.
 \end{theorem}
 \begin{proof}
+  Recall the definition of an odd number to be any number that can be written $2n + 1$.
   The definition of a perfect square is any number that can be written $n^2$,
   while a consecutive squared number is any number that can be written as $(n+1)^2$.
-  Finding the difference, we get $n^2+n+n+1-n^2$. This results in $n + n + 1$ which can be written as $2n + 1$.
-  Recall the definition of an odd number to be any number that can be written $2n + 1$.
+  Then,
+   \begin{align*} 
+     n^2+n+n+1-n^2
+     n + n + 1
+     2n + 1
+   \end{align*} 
 \end{proof}
 \begin{other}{Result}
-  Therefore, through the definition of an odd number,any integer that can be written that can be written as $2n+1$, where n is an integer is even.
   Thus, as any difference between consecutive perfect squares can be written as $2n+1$, it must therefore be odd.
 \end{other}
 
@@ -103,6 +117,9 @@ Since $2^0 = 1$, and since the last number is 0, we have \\$$n = 2m + 0 \cdot{1}
 \end{other}
 
 \begin{theorem}{22a}%!
+  There is not a property in the list of five distinct numbers of length 20
+  that says there must be two subsets of the list with the same sum
+
   
 \end{theorem}
 \begin{proof}

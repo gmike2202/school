@@ -14,6 +14,7 @@
   - [Analysis Model: Particle Under Constant Acceleration](#analysis-model-particle-under-constant-acceleration)
   - [Freely Falling Objects](#freely-falling-objects)
   - [Kinematic Equations Derived from Calculus](#kinematic-equations-derived-from-calculus)
+    - [Kinematic Equations](#kinematic-equations)
 <!--toc:end-->
 
 ## Position, Velocity, and Speed of a Particle
@@ -120,5 +121,3 @@ Steps to solve a problem:
 
 > [!Note]
 > If this discussion of integration is confusing, just remember that the integral of a function is simply the area between the function and the x axis between the limits of integration. If the function has a simple shape, the are can be easily calculated without integration. For example, if the function is a constant, so that its graph is a horizontal line, the area is just that of the rectangle between the line and the x axis!
-
-

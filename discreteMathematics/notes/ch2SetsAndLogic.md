@@ -79,7 +79,7 @@ There is a correspondence between set and logic notations:
 
 Implications:
   - $P \implies Q$ - the original statement
-  - $\neg Q \implies P$ - the contrapositive statement
+  - $\neg Q \implies \neg P$ - the contrapositive statement
   - $Q \implies P$ - the converse statement
   - $\neg P \implies \neg Q$ - the inverse statement, and contrapositive of the converse statement
 

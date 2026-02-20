@@ -1,0 +1,102 @@
+
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\W}{\mathbb{W}}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{homework}[2][Homework]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{other}[2][]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+ 
+%\renewcommand{\qedsymbol}{\filledbox}
+ 
+\title{Change Title}%replace X with the appropriate homework chapter or title
+\author{Michael Garcia, Ayden Barclay, Ty Turoczy, Harlow Sharp\\ %replace with your name
+MAT 203 - Discrete Mathematics} 
+ 
+\maketitle
+ 
+\begin{theorem}\\   %You can use theorem, proposition, homework, exercise, or reflection here.  Modify x.yz to be whatever number you are proving or solving
+  The function $f: \mathbb{Z} \rightarrow \mathbb{N}$ defined by
+  $f(n) = 
+  \begin{cases}
+    2n & \text{ if } n> 0\\
+    -2n+1 & \text{ if } n\leq 0\\
+  \end{cases}$
+  is an injection.
+\end{theorem}
+ 
+\begin{proof}
+  Recall that to prove that a function is an injection, we must prove that whenever $f(a) = f(b)$, then it must be true that $a=b$.\\
+  In other words, we must show that the preimage of every element in the range is associated with exactly one element of the domain.\\
+  Let $a, b \in \mathbb{Z} \text{ and assume that } f(a) = f(b)$.\\
+  \\
+  Notice that whenever the function input, n, is greater than zero, then the output, $f(n) = 2n$, is even.\\
+  \\
+  Similarly, whenever the function input, n, is less than or equal to zero, then the output, $f(n) = -2n+1$, is odd.\\
+  \\
+  An even number cannot equal an odd number, so there are two possible cases for $f(a)=f(b)$; either both a and b are greater than zero, so that $f(a)$ and $f(b)$ are both even, or both a and b are less than or equal to zero, so that $f(a)$ and $f(b)$ are both odd.\\
+  \\
+  \textbf{Case 1:}\\
+  Assume both $a$ and $b$ are greater than zero.\\
+  Then $f(a) = 2a \text{ and }f(b)= 2b$\\
+  By our assumption that $f(a)=f(b)$, we get:
+  \begin{align*}
+    f(a) &= f(b)\\
+    2(a) &= 2(b)\\
+    a &= b\\
+  \end{align*}
+  \\
+  \textbf{Case 2:}\\
+  Assume both $a$ and $b$ are less than or equal to zero.\\
+  Then $f(a) = -2a+1 \text{ and }f(b)= -2b+1$\\
+  By our assumption that $f(a)=f(b)$, we get:
+  \begin{align*}
+  f(a) &= f(b)\\
+  -2(a) + 1 &= -2(b) + 1\\
+  -2(a) &= -2(b)\\
+  a &= b\\
+  \end{align*}
+  \\
+  In all possible cases, whenever $f(a) = f(b)$, we get $a=b$.\\
+\\
+  This is what we needed to show\\
+\\
+  Thus, the function is an injection.
+\end{proof}
+
+% --------------------------------------------------------------
+%     You don't have to mess with anything below this line.
+% --------------------------------------------------------------
+ 
+\end{document}
+
+

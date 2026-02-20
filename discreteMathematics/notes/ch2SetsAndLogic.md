@@ -68,8 +68,8 @@ There is a correspondence between set and logic notations:
 
 ### Negation Interactions    
 - To make it negation statements easier to understand, it can be useful to rewrite them as such:
-  - $\neg(\forall \text{stuff}) \text{converts to} \exists \neg (\text{stuff})$
-  - $\neg(\exists \text{stuff}) \text{converts to} \forall \neg (\text{stuff})$
+  - $\neg(\forall \text{stuff}) \text{ converts to } \exists \neg (\text{stuff})$
+  - $\neg(\exists \text{stuff}) \text{ converts to } \forall \neg (\text{stuff})$
 - Additionally, it can be useful to negate each action in a statement one at a time.
 
 >DeMorgan's laws (logic version):
